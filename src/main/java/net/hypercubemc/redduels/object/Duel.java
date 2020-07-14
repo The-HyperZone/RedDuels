@@ -39,7 +39,7 @@ public class Duel {
     // the world of a queued duel is always null
     private World world = null;
 
-    // information about both players before they were teleported into the duel
+    // Information about both players before they were teleported into the duel
     private PlayerState callingPlayerState;
     private PlayerState challengedPlayerState;
 
@@ -92,9 +92,6 @@ public class Duel {
         player2SpawnLocation.setDirection(player1SpawnLocation.clone().subtract(player2SpawnLocation).toVector());
         callingPlayer.teleport(player1SpawnLocation);
         challengedPlayer.teleport(player2SpawnLocation);
-        // Record PlayerStates again after switching worlds
-        callingPlayerState = new PlayerState(callingPlayer);
-        challengedPlayerState = new PlayerState(challengedPlayer);
         // get the players' inventories for manipulation
         PlayerInventory callingPlayerInventory = callingPlayer.getInventory();
         PlayerInventory challengedPlayerInventory = challengedPlayer.getInventory();
@@ -285,8 +282,7 @@ public class Duel {
     // utility method for checking whether two players are in some way involved via the duel system
     // returns true if the players are involved in a duel object, returns false otherwise
     public static boolean bothInvolved(ArrayList<Duel> duels, Player playerA, Player playerB) {
-        for (int i = 0; i < duels.size(); i++){
-            Duel d = duels.get(i);
+        for (Duel d : duels) {
             if ((d.getCallingPlayer() == playerA && d.getChallengedPlayer() == playerB) || (d.getCallingPlayer() == playerB && d.getChallengedPlayer() == playerA)) {
                 return true;
             }
