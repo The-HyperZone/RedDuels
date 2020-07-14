@@ -79,7 +79,20 @@ public class Duel {
         world = wc.createWorld();
         // make it nice and sunny
         world.setTime(1000);
-        // record PlayerStates
+        // Record PlayerStates before switching worlds
+        callingPlayerState = new PlayerState(callingPlayer);
+        challengedPlayerState = new PlayerState(challengedPlayer);
+        // Teleport the players in before changing inventories, armor contents, etc. to solve problems with inventory sharing plugins
+        int[] a = duelType.player1SpawnLocation;
+        int[] b = duelType.player2SpawnLocation;
+        Location player1SpawnLocation = new Location(world, a[0], a[1], a[2]);
+        Location player2SpawnLocation = new Location(world, b[0], b[1], b[2]);
+        // players teleport in facing each other
+        player1SpawnLocation.setDirection(player2SpawnLocation.clone().subtract(player1SpawnLocation).toVector());
+        player2SpawnLocation.setDirection(player1SpawnLocation.clone().subtract(player2SpawnLocation).toVector());
+        callingPlayer.teleport(player1SpawnLocation);
+        challengedPlayer.teleport(player2SpawnLocation);
+        // Record PlayerStates again after switching worlds
         callingPlayerState = new PlayerState(callingPlayer);
         challengedPlayerState = new PlayerState(challengedPlayer);
         // get the players' inventories for manipulation
@@ -107,16 +120,6 @@ public class Duel {
         for (PotionEffect e : challengedPlayer.getActivePotionEffects()) {
             challengedPlayer.removePotionEffect(e.getType());
         }
-        // teleport the players in
-        int[] a = duelType.player1SpawnLocation;
-        int[] b = duelType.player2SpawnLocation;
-        Location player1SpawnLocation = new Location(world, a[0], a[1], a[2]);
-        Location player2SpawnLocation = new Location(world, b[0], b[1], b[2]);
-        // players teleport in facing each other
-        player1SpawnLocation.setDirection(player2SpawnLocation.clone().subtract(player1SpawnLocation).toVector());
-        player2SpawnLocation.setDirection(player1SpawnLocation.clone().subtract(player2SpawnLocation).toVector());
-        callingPlayer.teleport(player1SpawnLocation);
-        challengedPlayer.teleport(player2SpawnLocation);
         // ensure the players are in adventure mode
         callingPlayer.setGameMode(GameMode.ADVENTURE);
         challengedPlayer.setGameMode(GameMode.ADVENTURE);
