@@ -7,8 +7,11 @@ import com.github.radagastthered.redduels.redduels.command.CommandMuteDuel;
 import com.github.radagastthered.redduels.redduels.listener.CleanUpListener;
 import com.github.radagastthered.redduels.redduels.object.SharedData;
 import com.github.radagastthered.redduels.redduels.object.Duel;
+import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.bukkit.scheduler.BukkitRunnable;
+
+import java.util.logging.Logger;
 
 public final class RedDuels extends JavaPlugin {
 
@@ -34,10 +37,15 @@ public final class RedDuels extends JavaPlugin {
         this.getCommand("dueltypes").setExecutor(new CommandDuelTypes(sharedData));
         // register listeners
         getServer().getPluginManager().registerEvents(new CleanUpListener(sharedData), this);
+
+        Logger logger = Bukkit.getLogger();
+        logger.info("[RedDuels] Plugin enabled.");
     }
 
     @Override
     public void onDisable() {
         // Plugin shutdown logic
+        Logger logger = Bukkit.getLogger();
+        logger.info("[RedDuels] Plugin disabled.");
     }
 }

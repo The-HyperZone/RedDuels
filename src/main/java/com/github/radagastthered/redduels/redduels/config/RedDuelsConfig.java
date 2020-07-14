@@ -95,9 +95,7 @@ public class RedDuelsConfig {
     private void loadDuelTypes(FileConfiguration config) {
         // first we get the DuelTypes section, which contains all duel type definitions
         ConfigurationSection duelTypesSection = config.getConfigurationSection("DuelTypes");
-        Iterator i = duelTypesSection.getKeys(false).iterator();
-        while (i.hasNext()) {
-            String key = (String) i.next();
+        for (String key : duelTypesSection.getKeys(false)) {
             logger.info("[RedDuels] Found DuelType with key: " + key);
             // attempt to register a new DuelType
             DuelType duelType = new DuelType();
@@ -119,7 +117,7 @@ public class RedDuelsConfig {
             int player1X = config.getInt("DuelTypes." + key + ".Player1Spawn.X");
             int player1Y = config.getInt("DuelTypes." + key + ".Player1Spawn.Y");
             int player1Z = config.getInt("DuelTypes." + key + ".Player1Spawn.Z");
-            duelType.player1SpawnLocation = new int[] {
+            duelType.player1SpawnLocation = new int[]{
                     player1X,
                     player1Y,
                     player1Z
@@ -127,7 +125,7 @@ public class RedDuelsConfig {
             int player2X = config.getInt("DuelTypes." + key + ".Player2Spawn.X");
             int player2Y = config.getInt("DuelTypes." + key + ".Player2Spawn.Y");
             int player2Z = config.getInt("DuelTypes." + key + ".Player2Spawn.Z");
-            duelType.player2SpawnLocation = new int[] {
+            duelType.player2SpawnLocation = new int[]{
                     player2X,
                     player2Y,
                     player2Z

@@ -1,0 +1,24 @@
+com/github/radagastthered/redduels/redduels/object/DuelType.java
+ com.github.radagastthered.redduels.redduels.object.DuelType
+com/github/radagastthered/redduels/redduels/object/PlayerState.java
+ com.github.radagastthered.redduels.redduels.object.PlayerState
+com/github/radagastthered/redduels/redduels/config/RedDuelsConfig.java
+ com.github.radagastthered.redduels.redduels.config.RedDuelsConfig
+com/github/radagastthered/redduels/redduels/command/CommandDuel.java
+ com.github.radagastthered.redduels.redduels.command.CommandDuel
+com/github/radagastthered/redduels/redduels/command/CommandAcceptDuel.java
+ com.github.radagastthered.redduels.redduels.command.CommandAcceptDuel
+com/github/radagastthered/redduels/redduels/command/CommandMuteDuel.java
+ com.github.radagastthered.redduels.redduels.command.CommandMuteDuel
+com/github/radagastthered/redduels/redduels/RedDuels.java
+ com.github.radagastthered.redduels.redduels.RedDuels
+ com.github.radagastthered.redduels.redduels.RedDuels$1
+com/github/radagastthered/redduels/redduels/object/SharedData.java
+ com.github.radagastthered.redduels.redduels.object.SharedData
+com/github/radagastthered/redduels/redduels/command/CommandDuelTypes.java
+ com.github.radagastthered.redduels.redduels.command.CommandDuelTypes
+com/github/radagastthered/redduels/redduels/object/Duel.java
+ com.github.radagastthered.redduels.redduels.object.Duel
+ com.github.radagastthered.redduels.redduels.object.Duel$1
+com/github/radagastthered/redduels/redduels/listener/CleanUpListener.java
+ com.github.radagastthered.redduels.redduels.listener.CleanUpListener

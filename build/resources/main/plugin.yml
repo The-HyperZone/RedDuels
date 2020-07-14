@@ -1,0 +1,32 @@
+name: RedDuels
+version: ${project.version}
+main: com.github.radagastthered.redduels.redduels.RedDuels
+api-version: 1.15
+
+commands:
+  duel:
+    description: Challenge another player to a duel
+    usage: /duel <player> [duel type]
+  acceptduel:
+    description: Accept a duel offer from another player
+    usage: /acceptduel [player]
+    aliases: [aduel]
+  muteduel:
+    description: Mute incoming duel offers
+    usage: /muteduel
+    aliases: [mduel]
+  dueltypes:
+    description: List duel types you have access to
+    usage: /dueltypes
+    aliases: [dtypes, dtype, dueltype]
+
+permissions:
+  redduels.challenge:
+    description: Allow the use of /duel to challenge players
+    default: true
+  redduels.accept:
+    description: Allow the use of /acceptduel to accept duel offers
+    default: true
+  redduels.dueltype.*:
+    description: Allow the use of any duel type
+    default: op

@@ -1,0 +1,99 @@
+# RedDuels config
+# Color strings are all from ChatColor variables
+
+# DUEL TYPES CONFIGURATION
+DuelTypes:
+  Default:
+    World: 'Arena2'
+    RequirePermission: false
+    Description: 'Full diamond gear and a bow'
+    Player1Spawn:
+      X: 6
+      Y: 5
+      Z: 0
+    Player2Spawn:
+      X: -8
+      Y: 5
+      Z: 0
+    Items:
+      DIAMOND_SWORD:
+        Number: 1
+        Enchantments:
+          KNOCKBACK: 2
+          SHARPNESS: 5
+      BOW:
+        Number: 1
+        Enchantments:
+          PUNCH: 2
+      ARROW:
+        Number: 32
+      COOKED_SALMON:
+        Number: 22
+    Armor:
+      DIAMOND_BOOTS:
+        Enchantments:
+          PROTECTION: 4
+        Number: 1
+      DIAMOND_LEGGINGS:
+        Enchantments:
+          PROTECTION: 4
+        Number: 1
+      DIAMOND_CHESTPLATE:
+        Enchantments:
+          PROTECTION: 4
+        Number: 1
+      DIAMOND_HELMET:
+        Enchantments:
+          PROTECTION: 4
+        Number: 1
+  Naked:
+    World: 'Arena2'
+    RequirePermission: true
+    Description: 'A naked duel for nudist players'
+    Player1Spawn:
+      X: 6
+      Y: 5
+      Z: 0
+    Player2Spawn:
+      X: -8
+      Y: 5
+      Z: 0
+    Items:
+    Armor:
+
+# MESSAGE CONFIGURATION
+# The tag that appears in chat when RedDuels-related messages are sent
+# e.g. [RedDuels] You have challenged playerX to a duel!
+ChatTag:
+  Text: 'RedDuels'
+  TextColor: 'AQUA'
+  BracketColor: 'RED'
+  Enabled: true
+
+# Error messages
+ErrorMessage:
+  Color: 'DARK_RED'
+  Bold: false
+
+# Received duel offers
+DuelOfferReceivedMessage:
+  Color: 'DARK_RED'
+  Bold: true
+
+# Sent duel offers
+DuelOfferSentMessage:
+  Color: 'DARK_RED'
+  Bold: true
+
+# Supplementary information messages
+# e.g. reminding players how to accept duel requests when they are received
+InfoMessage:
+  Color: 'GREEN'
+  Bold: false
+  Enabled: true
+
+# Message that gets sent when a duel is completed
+DuelResolutionMessage:
+  Color: 'RED'
+  Bold: true
+  Enabled: true
