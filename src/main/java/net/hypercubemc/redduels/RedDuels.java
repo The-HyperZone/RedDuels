@@ -1,12 +1,12 @@
-package com.github.radagastthered.redduels.redduels;
+package net.hypercubemc.redduels;
 
-import com.github.radagastthered.redduels.redduels.command.CommandAcceptDuel;
-import com.github.radagastthered.redduels.redduels.command.CommandDuel;
-import com.github.radagastthered.redduels.redduels.command.CommandDuelTypes;
-import com.github.radagastthered.redduels.redduels.command.CommandMuteDuel;
-import com.github.radagastthered.redduels.redduels.listener.CleanUpListener;
-import com.github.radagastthered.redduels.redduels.object.SharedData;
-import com.github.radagastthered.redduels.redduels.object.Duel;
+import net.hypercubemc.redduels.command.CommandAcceptDuel;
+import net.hypercubemc.redduels.command.CommandDuel;
+import net.hypercubemc.redduels.command.CommandDuelTypes;
+import net.hypercubemc.redduels.command.CommandMuteDuel;
+import net.hypercubemc.redduels.listener.CleanUpListener;
+import net.hypercubemc.redduels.object.SharedData;
+import net.hypercubemc.redduels.object.Duel;
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.bukkit.scheduler.BukkitRunnable;

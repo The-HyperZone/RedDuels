@@ -1,6 +1,6 @@
-package com.github.radagastthered.redduels.redduels.config;
+package net.hypercubemc.redduels.config;
 
-import com.github.radagastthered.redduels.redduels.object.DuelType;
+import net.hypercubemc.redduels.object.DuelType;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.Material;
@@ -146,9 +146,7 @@ public class RedDuelsConfig {
         ArrayList<ItemStack> items = new ArrayList<ItemStack>();
         // if there are no items this will throw an NPE
         try {
-            Iterator i = cfgSection.getKeys(false).iterator();
-            while (i.hasNext()) {
-                String itemKey = (String) i.next();
+            for (String itemKey : cfgSection.getKeys(false)) {
                 int itemNum = cfgSection.getInt(itemKey + ".Number");
                 ItemStack item = new ItemStack(Material.getMaterial(itemKey), itemNum);
                 logger.info("[RedDuels] Found item: " + itemKey);

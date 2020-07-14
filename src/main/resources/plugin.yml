@@ -1,6 +1,6 @@
 name: RedDuels
 version: ${project.version}
-main: com.github.radagastthered.redduels.redduels.RedDuels
+main: net.hypercubemc.redduels.RedDuels
 api-version: 1.15
 
 commands:

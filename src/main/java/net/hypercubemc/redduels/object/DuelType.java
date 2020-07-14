@@ -1,4 +1,4 @@
-package com.github.radagastthered.redduels.redduels.object;
+package net.hypercubemc.redduels.object;
 
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.permissions.Permission;

@@ -1,7 +1,5 @@
-package com.github.radagastthered.redduels.redduels.object;
+package net.hypercubemc.redduels.object;
 
-import net.md_5.bungee.api.ChatMessageType;
-import net.md_5.bungee.api.chat.ComponentBuilder;
 import org.bukkit.*;
 import org.bukkit.attribute.Attribute;
 import org.bukkit.boss.BarColor;
@@ -18,7 +16,6 @@ import org.bukkit.inventory.PlayerInventory;
 import org.bukkit.potion.PotionEffect;
 
 import java.util.ArrayList;
-import java.util.Collection;
 
 public class Duel {
 

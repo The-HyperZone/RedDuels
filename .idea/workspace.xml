@@ -3,8 +3,18 @@
   <component name="ChangeListManager">
     <list default="true" id="23391a06-5813-43a9-93b4-4fa8fc714672" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/radagastthered/redduels/redduels/RedDuels.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/hypercubemc/redduels/RedDuels.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/radagastthered/redduels/redduels/command/CommandAcceptDuel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/hypercubemc/redduels/command/CommandAcceptDuel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/radagastthered/redduels/redduels/command/CommandDuel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/hypercubemc/redduels/command/CommandDuel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/radagastthered/redduels/redduels/command/CommandDuelTypes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/hypercubemc/redduels/command/CommandDuelTypes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/radagastthered/redduels/redduels/command/CommandMuteDuel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/hypercubemc/redduels/command/CommandMuteDuel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/radagastthered/redduels/redduels/config/RedDuelsConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/hypercubemc/redduels/config/RedDuelsConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/radagastthered/redduels/redduels/listener/CleanUpListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/hypercubemc/redduels/listener/CleanUpListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/radagastthered/redduels/redduels/object/Duel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/hypercubemc/redduels/object/Duel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/radagastthered/redduels/redduels/object/DuelType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/hypercubemc/redduels/object/DuelType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/radagastthered/redduels/redduels/object/PlayerState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/hypercubemc/redduels/object/PlayerState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/radagastthered/redduels/redduels/object/SharedData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/hypercubemc/redduels/object/SharedData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/plugin.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

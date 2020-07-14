@@ -1,4 +1,4 @@
-package com.github.radagastthered.redduels.redduels.object;
+package net.hypercubemc.redduels.object;
 
 import org.bukkit.GameMode;
 import org.bukkit.Location;

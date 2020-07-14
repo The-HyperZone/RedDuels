@@ -1,7 +1,7 @@
-package com.github.radagastthered.redduels.redduels.listener;
+package net.hypercubemc.redduels.listener;
 
-import com.github.radagastthered.redduels.redduels.object.Duel;
-import com.github.radagastthered.redduels.redduels.object.SharedData;
+import net.hypercubemc.redduels.object.Duel;
+import net.hypercubemc.redduels.object.SharedData;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;

@@ -1,6 +1,6 @@
-package com.github.radagastthered.redduels.redduels.object;
+package net.hypercubemc.redduels.object;
 
-import com.github.radagastthered.redduels.redduels.config.RedDuelsConfig;
+import net.hypercubemc.redduels.config.RedDuelsConfig;
 import org.bukkit.entity.Player;
 import org.bukkit.plugin.Plugin;
 

@@ -1,9 +1,8 @@
-package com.github.radagastthered.redduels.redduels.command;
+package net.hypercubemc.redduels.command;
 
-import com.github.radagastthered.redduels.redduels.object.SharedData;
-import com.github.radagastthered.redduels.redduels.object.Duel;
+import net.hypercubemc.redduels.object.SharedData;
+import net.hypercubemc.redduels.object.Duel;
 import org.bukkit.Bukkit;
-import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
