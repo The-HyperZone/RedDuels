@@ -2,8 +2,12 @@ plugins {
     id 'java'
 }
 
+sourceCompatibility = 14
+targetCompatibility = 14
+
 repositories {
-    mavenLocal()
+    mavenCentral()
+
     maven {
         name = 'spigotmc'
         url = 'https://hub.spigotmc.org/nexus/content/repositories/snapshots/'
@@ -13,6 +17,8 @@ repositories {
         name = 'sontatype'
         url = 'https://oss.sonatype.org/content/groups/public/'
     }
+
+    mavenLocal()
 }
 
 dependencies {
@@ -22,7 +28,6 @@ dependencies {
 group = 'com.github.radagast-the-red.redduels'
 version = '1.16.1-1.0.0'
 description = 'RedDuels'
-sourceCompatibility = '1.8'
 
 tasks.withType(JavaCompile) {
     options.encoding = 'UTF-8'
